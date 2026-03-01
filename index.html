@@ -99,9 +99,7 @@ main{
   box-shadow:0 18px 40px rgba(0,0,0,.12);
 }
 
-h2{
-  margin-top:0;
-}
+h2{ margin-top:0; }
 
 ul{
   line-height:1.9;
@@ -140,6 +138,42 @@ footer{
   color:var(--muted);
   margin-top:15px;
 }
+
+/* ====== 📱 الحل الثالث الاحترافي للجوال ====== */
+@media (max-width:600px){
+  body{ padding:0; }
+  .wrap{
+    padding:12px;
+  }
+  main{
+    padding:10px;
+  }
+  nav{
+    gap:8px;
+  }
+  nav a{
+    width:100%;
+    text-align:center;
+    padding:10px 12px;
+    border-radius:12px;
+    background:#f8fafc;
+    border:1px solid var(--line);
+  }
+  .card{
+    padding:16px;
+    border-radius:12px;
+    margin-bottom:14px;
+  }
+  h1{ font-size:18px; }
+  .subtitle{ font-size:12.5px; }
+  table{
+    font-size:13px;
+  }
+  th, td{
+    padding:8px;
+  }
+}
+/* ========================================== */
 
 @media(max-width:800px){
   nav{flex-direction:column}
@@ -199,11 +233,16 @@ footer{
 <section id="clean" class="card">
   <h2>♻️ الطاقة النظيفة</h2>
   <p>هي طاقة تُنتج من مصادر طبيعية متجددة تقلل من التلوث والانبعاثات الضارة.</p>
+  <ul>
+    <li>☀️ الطاقة الشمسية</li>
+    <li>🌬️ طاقة الرياح</li>
+    <li>💧 الطاقة المائية</li>
+  </ul>
 </section>
 
 <section id="solar" class="card">
   <h2>☀️ الطاقة الشمسية</h2>
-  <p>يتم تحويل أشعة الشمس إلى كهرباء باستخدام الألواح الشمسية.</p>
+  <p>يتم تحويل أشعة الشمس إلى كهرباء باستخدام الألواح الشمسية، وتعد من أهم مصادر الطاقة المتجددة.</p>
 </section>
 
 <section id="benefits" class="card">
@@ -212,12 +251,13 @@ footer{
     <li>مصدر متجدد لا ينفد.</li>
     <li>صديقة للبيئة.</li>
     <li>تقلل من تكاليف الكهرباء.</li>
+    <li>تقلل من الاعتماد على الوقود الأحفوري.</li>
   </ul>
 </section>
 
 <section id="ksa" class="card">
   <h2>🇸🇦 جهود المملكة</h2>
-  <p>تدعم المملكة مشاريع الطاقة المتجددة ضمن رؤية 2030.</p>
+  <p>تدعم المملكة العربية السعودية مشاريع الطاقة المتجددة ضمن رؤية 2030 لتعزيز الاستدامة وتنويع مصادر الطاقة.</p>
 </section>
 
 <section id="tips" class="card">
@@ -226,11 +266,12 @@ footer{
     <li>ترشيد استهلاك الكهرباء.</li>
     <li>زراعة الأشجار.</li>
     <li>إعادة التدوير.</li>
+    <li>تقليل استخدام البلاستيك.</li>
   </ul>
 </section>
 
 <section id="compare" class="card">
-  <h2>📊 المقارنة</h2>
+  <h2>📊 المقارنة بين الطاقة النظيفة وغير النظيفة</h2>
   <table>
     <tr>
       <th>وجه المقارنة</th>
@@ -241,6 +282,11 @@ footer{
       <td>التلوث</td>
       <td>قليل</td>
       <td>مرتفع</td>
+    </tr>
+    <tr>
+      <td>المصدر</td>
+      <td>متجدد</td>
+      <td>قابل للنفاد</td>
     </tr>
   </table>
 </section>
@@ -262,7 +308,6 @@ footer{
   <footer>
     جميع الحقوق محفوظة © 2026
   </footer>
-
 </section>
 
 </main>
