@@ -1,390 +1,282 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>البيئة والطاقة النظيفة | الطاقة الشمسية نموذجًا</title>
-  <meta name="description" content="موقع تعليمي عن البيئة والتلوث والطاقة النظيفة مع التركيز على الطاقة الشمسية للصف السادس الابتدائي." />
-  <style>
-    :root{
-      --bg:#f7fbf7;
-      --card:#ffffff;
-      --text:#0f172a;
-      --muted:#475569;
-      --brand:#16a34a;
-      --brand2:#f59e0b;
-      --line:#e2e8f0;
-      --shadow: 0 10px 25px rgba(2,6,23,.08);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
-      background:linear-gradient(180deg, #ecfeff 0%, var(--bg) 45%, #fff 100%);
-      color:var(--text);
-    }
-    header{
-      position:sticky; top:0; z-index:10;
-      background:rgba(255,255,255,.85);
-      backdrop-filter: blur(8px);
-      border-bottom:1px solid var(--line);
-    }
-    .wrap{max-width:1100px; margin:auto; padding:14px 16px}
-    .top{
-      display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-    }
-    .logo{
-      width:42px; height:42px; border-radius:12px;
-      background: radial-gradient(circle at 30% 30%, #fde68a, var(--brand2) 40%, #16a34a 90%);
-      box-shadow: var(--shadow);
-    }
-    h1{font-size:18px; margin:0}
-    .subtitle{margin:0; font-size:12.5px; color:var(--muted)}
-    nav{
-      display:flex; gap:8px; flex-wrap:wrap; align-items:center; justify-content:flex-start;
-      padding-top:8px;
-    }
-    nav a{
-      text-decoration:none; color:var(--text);
-      padding:8px 10px; border-radius:999px;
-      border:1px solid transparent;
-      font-size:13px;
-    }
-    nav a:hover{border-color:var(--line); background:#fff}
-    main{max-width:1100px; margin:auto; padding:18px 16px 80px}
-    .hero{
-      display:grid; grid-template-columns: 1.3fr .7fr; gap:16px; align-items:stretch;
-    }
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:18px;
-      box-shadow: var(--shadow);
-    }
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      background:#dcfce7; color:#166534;
-      padding:6px 10px; border-radius:999px; font-size:12.5px;
-      border:1px solid #bbf7d0;
-    }
-    .hero h2{margin:10px 0 6px; font-size:22px}
-    .hero p{margin:0; color:var(--muted); line-height:1.9}
-    .grid{
-      display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-top:14px;
-    }
-    .mini{
-      padding:12px; border-radius:14px; border:1px solid var(--line);
-      background:linear-gradient(180deg, #fff 0%, #f8fafc 100%);
-    }
-    .mini b{display:block; margin-bottom:6px}
-    .mini span{color:var(--muted); font-size:13px; line-height:1.8}
-    section{margin-top:18px}
-    section h3{
-      margin:0 0 10px; font-size:18px;
-      display:flex; align-items:center; gap:10px;
-    }
-    .dot{
-      width:10px; height:10px; border-radius:999px;
-      background:var(--brand);
-      box-shadow: 0 0 0 4px rgba(22,163,74,.15);
-    }
-    ul{margin:10px 0 0; padding:0 18px; color:var(--muted); line-height:1.9}
-    .note{
-      margin-top:10px;
-      padding:12px 14px; border-radius:14px;
-      background:#fffbeb; border:1px solid #fde68a; color:#7c2d12;
-      line-height:1.9;
-    }
-    table{
-      width:100%; border-collapse:separate; border-spacing:0;
-      overflow:hidden; border-radius:14px; border:1px solid var(--line);
-      background:#fff;
-    }
-    th, td{padding:12px 10px; border-bottom:1px solid var(--line); font-size:14px}
-    th{background:#f1f5f9; text-align:right}
-    tr:last-child td{border-bottom:none}
-    footer{
-      margin-top:22px; color:var(--muted); font-size:13px; line-height:1.9;
-      text-align:center;
-    }
-    .kbd{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-      background:#f1f5f9; border:1px solid #e2e8f0;
-      padding:2px 6px; border-radius:8px;
-      font-size:12px; color:#334155;
-    }
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr}
-      .grid{grid-template-columns:1fr}
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>🌿 البيئة وفوائد الطاقة النظيفة | الطاقة الشمسية نموذجًا</title>
+
+<style>
+:root{
+  --bg:#f4f9f6;
+  --card:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+  --brand:#15803d;
+  --line:#e2e8f0;
+  --shadow:0 10px 25px rgba(0,0,0,.07);
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+  background:linear-gradient(180deg,#e6f4ea 0%,#f8fafc 60%);
+  color:var(--text);
+  scroll-behavior:smooth;
+}
+
+header{
+  background:#ffffff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:15px;
+}
+
+h1{
+  margin:0;
+  font-size:20px;
+}
+
+.subtitle{
+  margin:4px 0 0;
+  font-size:13px;
+  color:var(--muted);
+}
+
+nav{
+  margin-top:10px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+nav a{
+  text-decoration:none;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:13px;
+  color:var(--text);
+  transition:all 0.3s ease;
+}
+
+nav a:hover{
+  background:#dcfce7;
+  transform:scale(1.05);
+}
+
+main{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+.card{
+  background:var(--card);
+  border-radius:15px;
+  padding:20px;
+  box-shadow:var(--shadow);
+  margin-bottom:20px;
+  transition:all 0.4s ease;
+  opacity:0;
+  transform:translateY(20px);
+}
+
+.card.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+h2{
+  margin-top:0;
+}
+
+ul{
+  line-height:1.9;
+  color:var(--muted);
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+}
+
+th,td{
+  border:1px solid var(--line);
+  padding:10px;
+  text-align:center;
+}
+
+th{
+  background:#ecfdf5;
+}
+
+.footer-box{
+  margin-top:30px;
+  padding:20px;
+  background:linear-gradient(135deg,#e0f2fe,#f0fdf4);
+  border:2px solid #16a34a;
+  border-radius:15px;
+  text-align:center;
+  line-height:2;
+}
+
+footer{
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:15px;
+}
+
+@media(max-width:800px){
+  nav{flex-direction:column}
+}
+</style>
 </head>
+
 <body>
 
 <header>
   <div class="wrap">
-    <div class="top">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div>
-          <h1>البيئة وفوائد الطاقة النظيفة</h1>
-          <p class="subtitle">الطاقة الشمسية نموذجًا — مشروع الطالبة آلاء أحمد عمر الصف السادس</p>
-        </div>
-      </div>
-      <div class="badge">🌿 موقع تعليمي • ☀️ طاقة متجددة • 🏫 مشروع مدرسي</div>
-    </div>
+    <h1>🌿 البيئة وفوائد الطاقة النظيفة</h1>
+    <div class="subtitle">☀️ الطاقة الشمسية نموذجًا</div>
 
-    <nav aria-label="روابط الصفحات">
-      <a href="#home">الرئيسية</a>
-      <a href="#importance">أهمية البيئة</a>
-      <a href="#pollution">التلوث</a>
-      <a href="#clean">الطاقة النظيفة</a>
-      <a href="#solar">الطاقة الشمسية</a>
-      <a href="#benefits">الفوائد</a>
-      <a href="#ksa">جهود المملكة</a>
-      <a href="#tips">كيف نحافظ؟</a>
-      <a href="#compare">مقارنة</a>
-      <a href="#refs">المراجع</a>
+    <nav>
+      <a href="#home">🏠 الرئيسية</a>
+      <a href="#importance">🌍 أهمية البيئة</a>
+      <a href="#pollution">🏭 التلوث</a>
+      <a href="#clean">♻️ الطاقة النظيفة</a>
+      <a href="#solar">☀️ الطاقة الشمسية</a>
+      <a href="#benefits">✅ الفوائد</a>
+      <a href="#ksa">🇸🇦 جهود المملكة</a>
+      <a href="#tips">🌱 المحافظة على البيئة</a>
+      <a href="#compare">📊 المقارنة</a>
+      <a href="#refs">📚 المراجع</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <!-- الرئيسية -->
-  <section id="home" class="hero" aria-label="الرئيسية">
-    <div class="card">
-      <span class="badge">🌍 هدفنا: حماية البيئة باستخدام طاقة نظيفة</span>
-      <h2>مرحبًا بك في موقع البيئة والطاقة الشمسية</h2>
-      <p>
-        البيئة هي كل ما يحيط بنا من هواء وماء وتربة وكائنات حية. وعندما نحافظ عليها نحافظ على صحتنا
-        ومستقبلنا. في هذا الموقع سنتعرف على مشكلة التلوث، ثم نكتشف كيف تساعدنا الطاقة النظيفة — وخاصة
-        الطاقة الشمسية — في تقليل التلوث وبناء مستقبل أفضل.
-      </p>
 
-      <div class="grid" role="list">
-        <div class="mini" role="listitem">
-          <b>🎯 أهداف الموقع</b>
-          <span>تعلم مفهوم البيئة، فهم التلوث، التعرف على الطاقة النظيفة، دراسة الطاقة الشمسية وفوائدها.</span>
-        </div>
-        <div class="mini" role="listitem">
-          <b>🧩 ماذا ستجد هنا؟</b>
-          <span>معلومات بسيطة + نقاط واضحة + مقارنة بين الطاقة النظيفة وغير النظيفة + مراجع.</span>
-        </div>
-        <div class="mini" role="listitem">
-          <b>✅ نصيحة للامتياز</b>
-          <span>أضف صورًا وفيديو قصير داخل Google Sites أو عند استضافة هذا الملف.</span>
-        </div>
-      </div>
-    </div>
+<section id="home" class="card">
+  <h2>🌟 مقدمة</h2>
+  <p>
+    البيئة هي كل ما يحيط بنا من هواء وماء وتربة وكائنات حية.
+    والمحافظة عليها مسؤولية مشتركة بين جميع أفراد المجتمع.
+    يهدف هذا المشروع إلى توضيح أهمية البيئة ودور الطاقة النظيفة،
+    وخاصة الطاقة الشمسية، في حماية كوكب الأرض.
+  </p>
+</section>
 
-    <div class="card">
-      <h3><span class="dot"></span>سؤال تفاعلي</h3>
-      <p style="margin:0;color:var(--muted);line-height:1.9">
-        كيف يمكن لمدرستنا الاستفادة من الطاقة الشمسية لتقليل استهلاك الكهرباء؟
-      </p>
-      <div class="note">
-        ✍️ اكتب إجابتك واقترح فكرة واحدة مثل: تركيب ألواح شمسية على سطح المدرسة أو تشغيل إنارة الممرات بالطاقة الشمسية.
-      </div>
-    </div>
-  </section>
+<section id="importance" class="card">
+  <h2>🌍 أهمية البيئة</h2>
+  <ul>
+    <li>توفر الهواء النقي للتنفس.</li>
+    <li>توفر الماء للشرب والاستخدام اليومي.</li>
+    <li>تمدنا بالغذاء من النباتات والحيوانات.</li>
+    <li>توفر موارد طبيعية مهمة للحياة.</li>
+  </ul>
+</section>
 
-  <!-- أهمية البيئة -->
-  <section id="importance">
-    <div class="card">
-      <h3><span class="dot"></span>أهمية البيئة</h3>
-      <p style="margin:0;color:var(--muted);line-height:1.9">
-        البيئة مهمة لأنها توفر لنا كل ما نحتاجه للحياة. وعندما نحافظ عليها تصبح حياتنا أكثر صحة وأمانًا.
-      </p>
-      <ul>
-        <li>توفر الهواء النقي للتنفس.</li>
-        <li>توفر الماء للشرب والاستخدام اليومي.</li>
-        <li>تمدنا بالغذاء من النباتات والحيوانات.</li>
-        <li>تحتوي على موارد طبيعية نستخدمها مثل المعادن ومصادر الطاقة.</li>
-      </ul>
-    </div>
-  </section>
+<section id="pollution" class="card">
+  <h2>🏭 مشكلة التلوث</h2>
+  <p>التلوث هو إدخال مواد ضارة إلى البيئة مما يؤثر على صحة الإنسان والكائنات الحية.</p>
+</section>
 
-  <!-- التلوث -->
-  <section id="pollution">
-    <div class="card">
-      <h3><span class="dot"></span>مشكلة التلوث</h3>
-      <p style="margin:0;color:var(--muted);line-height:1.9">
-        التلوث هو إدخال مواد ضارة إلى البيئة مثل الدخان أو النفايات، مما يؤثر على صحة الإنسان والكائنات الحية.
-      </p>
+<section id="clean" class="card">
+  <h2>♻️ الطاقة النظيفة</h2>
+  <p>هي طاقة تُنتج من مصادر طبيعية متجددة تقلل من التلوث والانبعاثات الضارة.</p>
+</section>
 
-      <h4 style="margin:14px 0 6px">أسباب التلوث</h4>
-      <ul>
-        <li>دخان المصانع.</li>
-        <li>عوادم السيارات.</li>
-        <li>حرق الوقود الأحفوري (النفط والفحم).</li>
-        <li>رمي النفايات في الأماكن العامة.</li>
-      </ul>
+<section id="solar" class="card">
+  <h2>☀️ الطاقة الشمسية</h2>
+  <p>يتم تحويل أشعة الشمس إلى كهرباء باستخدام الألواح الشمسية.</p>
+</section>
 
-      <h4 style="margin:14px 0 6px">نتائج التلوث</h4>
-      <ul>
-        <li>زيادة الأمراض التنفسية.</li>
-        <li>الاحتباس الحراري وارتفاع درجة حرارة الأرض.</li>
-        <li>ذوبان الجليد وارتفاع مستوى البحار.</li>
-        <li>تأثر النباتات والحيوانات واختلال التوازن البيئي.</li>
-      </ul>
-    </div>
-  </section>
+<section id="benefits" class="card">
+  <h2>✅ فوائد الطاقة الشمسية</h2>
+  <ul>
+    <li>مصدر متجدد لا ينفد.</li>
+    <li>صديقة للبيئة.</li>
+    <li>تقلل من تكاليف الكهرباء.</li>
+  </ul>
+</section>
 
-  <!-- الطاقة النظيفة -->
-  <section id="clean">
-    <div class="card">
-      <h3><span class="dot"></span>ما هي الطاقة النظيفة؟</h3>
-      <p style="margin:0;color:var(--muted);line-height:1.9">
-        الطاقة النظيفة هي طاقة تُنتَج من مصادر طبيعية متجددة لا تلوث البيئة. وهي تساعد على تقليل الدخان والغازات الضارة.
-      </p>
-      <ul>
-        <li>الطاقة الشمسية ☀️</li>
-        <li>طاقة الرياح 🌬️</li>
-        <li>الطاقة المائية 💧</li>
-      </ul>
-      <div class="note">
-        ✅ لماذا تُسمى نظيفة؟ لأنها لا تنتج دخانًا مثل بعض طرق إنتاج الكهرباء باستخدام الوقود الأحفوري.
-      </div>
-    </div>
-  </section>
+<section id="ksa" class="card">
+  <h2>🇸🇦 جهود المملكة</h2>
+  <p>تدعم المملكة مشاريع الطاقة المتجددة ضمن رؤية 2030.</p>
+</section>
 
-  <!-- الطاقة الشمسية -->
-  <section id="solar">
-    <div class="card">
-      <h3><span class="dot"></span>الطاقة الشمسية</h3>
-      <p style="margin:0;color:var(--muted);line-height:1.9">
-        الطاقة الشمسية هي طاقة نحصل عليها من أشعة الشمس، ويتم تحويلها إلى كهرباء باستخدام ألواح شمسية.
-      </p>
+<section id="tips" class="card">
+  <h2>🌱 المحافظة على البيئة</h2>
+  <ul>
+    <li>ترشيد استهلاك الكهرباء.</li>
+    <li>زراعة الأشجار.</li>
+    <li>إعادة التدوير.</li>
+  </ul>
+</section>
 
-      <h4 style="margin:14px 0 6px">كيف تعمل الألواح الشمسية؟</h4>
-      <ol style="margin:10px 0 0; padding:0 18px; color:var(--muted); line-height:1.9">
-        <li>تسقط أشعة الشمس على الألواح.</li>
-        <li>تمتص الخلايا الشمسية الضوء.</li>
-        <li>يتحول الضوء إلى طاقة كهربائية.</li>
-        <li>نستخدم الكهرباء لتشغيل الأجهزة في المنزل أو المدرسة.</li>
-      </ol>
+<section id="compare" class="card">
+  <h2>📊 المقارنة</h2>
+  <table>
+    <tr>
+      <th>وجه المقارنة</th>
+      <th>الطاقة النظيفة</th>
+      <th>الطاقة غير النظيفة</th>
+    </tr>
+    <tr>
+      <td>التلوث</td>
+      <td>قليل</td>
+      <td>مرتفع</td>
+    </tr>
+  </table>
+</section>
 
-      <div class="note">
-        💡 مثال: يمكن استخدام الطاقة الشمسية في إنارة الحدائق، وتشغيل بعض الأجهزة، وشحن البطاريات.
-      </div>
-    </div>
-  </section>
+<section id="refs" class="card">
+  <h2>📚 المراجع</h2>
+  <ul>
+    <li>كتاب العلوم والمهارات الرقمية.</li>
+    <li>وزارة الطاقة السعودية.</li>
+  </ul>
 
-  <!-- فوائد الطاقة الشمسية -->
-  <section id="benefits">
-    <div class="card">
-      <h3><span class="dot"></span>فوائد الطاقة الشمسية</h3>
-      <ul>
-        <li>مصدر متجدد لا ينفد.</li>
-        <li>لا يسبب تلوث الهواء.</li>
-        <li>يساعد على تقليل فواتير الكهرباء.</li>
-        <li>يقلل من الاعتماد على النفط والوقود.</li>
-        <li>آمن وصديق للبيئة.</li>
-        <li>يساهم في تقليل الاحتباس الحراري.</li>
-      </ul>
-    </div>
-  </section>
+  <div class="footer-box">
+    <strong>📝 إعداد الطالبة:</strong> آلاء أحمد عمر<br>
+    <strong>🏫 الصف:</strong> السادس الابتدائي (ب)<br>
+    <strong>📘 المادة:</strong> المهارات الرقمية<br>
+    <strong>👩‍🏫 إشراف الأستاذة:</strong> منيرة المطيري
+  </div>
 
-  <!-- جهود المملكة -->
-  <section id="ksa">
-    <div class="card">
-      <h3><span class="dot"></span>جهود المملكة في الطاقة المتجددة</h3>
-      <p style="margin:0;color:var(--muted);line-height:1.9">
-        تهتم المملكة العربية السعودية بالطاقة المتجددة ضمن رؤية 2030، وذلك عبر دعم مشاريع الطاقة الشمسية
-        والطاقة النظيفة لتقليل التلوث وتنويع مصادر الطاقة وبناء مستقبل مستدام.
-      </p>
-      <div class="note">
-        ⭐ إضافة هذه الصفحة عادةً ترفع تقييم المشروع لأنها تربط الموضوع بواقعنا.
-      </div>
-    </div>
-  </section>
+  <footer>
+    جميع الحقوق محفوظة © 2026
+  </footer>
 
-  <!-- كيف نحافظ -->
-  <section id="tips">
-    <div class="card">
-      <h3><span class="dot"></span>كيف نحافظ على البيئة؟</h3>
-      <ul>
-        <li>ترشيد استهلاك الكهرباء (إطفاء الأنوار عند عدم الحاجة).</li>
-        <li>إطفاء الأجهزة أو فصل الشاحن بعد الانتهاء.</li>
-        <li>زراعة الأشجار لأنها تنقي الهواء.</li>
-        <li>إعادة التدوير وتقليل استخدام البلاستيك.</li>
-        <li>استخدام الطاقة النظيفة عندما تتوفر.</li>
-      </ul>
-    </div>
-  </section>
+</section>
 
-  <!-- مقارنة -->
-  <section id="compare">
-    <div class="card">
-      <h3><span class="dot"></span>مقارنة بين الطاقة النظيفة وغير النظيفة</h3>
-      <table aria-label="جدول مقارنة">
-        <thead>
-          <tr>
-            <th>وجه المقارنة</th>
-            <th>الطاقة النظيفة</th>
-            <th>الطاقة غير النظيفة</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>التلوث</td>
-            <td>لا تسبب تلوثًا كبيرًا</td>
-            <td>تسبب دخانًا وغازات ضارة</td>
-          </tr>
-          <tr>
-            <td>المصدر</td>
-            <td>متجدد (لا ينفد بسرعة)</td>
-            <td>قابل للنفاد (مثل النفط والفحم)</td>
-          </tr>
-          <tr>
-            <td>الأثر على الصحة</td>
-            <td>أكثر أمانًا</td>
-            <td>قد تزيد الأمراض التنفسية</td>
-          </tr>
-          <tr>
-            <td>الأثر على المناخ</td>
-            <td>تقلل الاحتباس الحراري</td>
-            <td>تزيد الاحتباس الحراري</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- المراجع -->
-  <section id="refs">
-    <div class="card">
-      <h3><span class="dot"></span>المراجع</h3>
-      <ul>
-        <li>كتاب المهارات الرقمية / العلوم (محتوى مدرسي).</li>
-        <li>وزارة الطاقة السعودية (للاطلاع على مبادرات الطاقة المتجددة).</li>
-        <li>مقالات تعليمية مبسطة عن الطاقة المتجددة.</li>
-      </ul>
-      <div class="note">
-        ✅ ملاحظة: عند تسليم المشروع، اكتب أسماء المراجع التي استخدمتها فعلًا، ولو كانت 2–3 فقط.
-      </div>
-    </div>
-
-    <footer>
-      <div style="margin-top:50px; padding:25px; background:linear-gradient(135deg,#e0f2fe,#f0fdf4); border:2px solid #16a34a; border-radius:15px; text-align:center; font-size:16px; line-height:2; box-shadow:0 8px 18px rgba(0,0,0,0.08);">
-  <h3 style="margin-bottom:15px; color:#166534;">📘 بيانات المشروع</h3>
-  <strong>إعداد الطالبة:</strong> آلاء أحمد عمر<br>
-  <strong>الصف:</strong> السادس الابتدائي<br>
-  <strong>المادة:</strong> المهارات الرقمية<br>
-  <strong>إشراف الأستاذة:</strong> منيرة المطيري
-</div>
-      تم إعداد هذا الموقع كمشروع مدرسي عن البيئة والطاقة النظيفة. 🌿☀️
-      
-      <br />
-      تلميح: لإضافة فيديو، استخدم داخل Google Sites: <span class="kbd">إدراج → YouTube</span>.
-    </footer>
-  </section>
 </main>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card, index) => {
+    setTimeout(() => {
+      card.classList.add("visible");
+    }, index * 200);
+  });
+});
+</script>
+
 </body>
-
 </html>
-
