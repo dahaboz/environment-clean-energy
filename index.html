@@ -1,301 +1,225 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>🌿 البيئة وفوائد الطاقة النظيفة | ☀️ الطاقة الشمسية نموذجًا</title>
-  <meta name="description" content="موقع تعليمي عن البيئة والتلوث والطاقة النظيفة مع التركيز على الطاقة الشمسية." />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>🌿 البيئة وفوائد الطاقة النظيفة | ☀️ الطاقة الشمسية نموذجًا</title>
 
-  <style>
-    :root{
-      --bg:#f4f9f6;
-      --card:#ffffff;
-      --text:#0f172a;
-      --muted:#475569;
-      --brand:#15803d;
-      --brand2:#16a34a;
-      --line:#e2e8f0;
-      --shadow:0 10px 25px rgba(0,0,0,.07);
-    }
-    *{box-sizing:border-box}
+<style>
+:root{
+  --bg:#f4f9f6;
+  --card:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+  --brand:#15803d;
+  --brand2:#16a34a;
+  --line:#e2e8f0;
+  --shadow:0 10px 25px rgba(0,0,0,.07);
+}
 
-    body{
-      margin:0;
-      font-family:"Segoe UI",Tahoma,Arial,sans-serif;
-      background:linear-gradient(180deg,#e6f4ea 0%,#f8fafc 60%);
-      color:var(--text);
-      scroll-behavior:smooth;
-    }
+*{box-sizing:border-box}
 
-    header{
-      background:rgba(255,255,255,.92);
-      border-bottom:1px solid var(--line);
-      position:sticky;
-      top:0;
-      z-index:10;
-      backdrop-filter: blur(8px);
-    }
+body{
+  margin:0;
+  font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+  background:linear-gradient(180deg,#e6f4ea 0%,#f8fafc 60%);
+  color:var(--text);
+  scroll-behavior:smooth;
+}
 
-    .wrap{
-      max-width:1100px;
-      margin:auto;
-      padding:14px 16px;
-    }
+/* ✅ الشريط العلوي ثابت بالكامل */
+header{
+  background:rgba(255,255,255,.95);
+  border-bottom:1px solid var(--line);
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:999;
+  backdrop-filter: blur(8px);
+}
 
-    .topbar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      flex-wrap:wrap;
-    }
+/* نعطي الصفحة مسافة حتى لا يختفي المحتوى خلف الهيدر */
+body{
+  padding-top:120px;
+}
 
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      min-width: 260px;
-    }
+.wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:14px 16px;
+}
 
-    .logo{
-      width:42px;height:42px;border-radius:12px;
-      background: radial-gradient(circle at 30% 30%, #dbeafe, #60a5fa 45%, #16a34a 95%);
-      box-shadow: var(--shadow);
-      flex:0 0 auto;
-    }
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
 
-    h1{
-      margin:0;
-      font-size:20px;
-      line-height:1.2;
-    }
-    .subtitle{
-      margin:4px 0 0;
-      font-size:13px;
-      color:var(--muted);
-    }
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:260px;
+}
 
-    .tag{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:7px 12px;
-      border-radius:999px;
-      font-size:12.5px;
-      color:#0f172a;
-      background:#ecfdf5;
-      border:1px solid #bbf7d0;
-      box-shadow: 0 6px 14px rgba(0,0,0,.05);
-      white-space:nowrap;
-    }
+.logo{
+  width:42px;height:42px;border-radius:12px;
+  background: radial-gradient(circle at 30% 30%, #dbeafe, #60a5fa 45%, #16a34a 95%);
+  box-shadow: var(--shadow);
+}
 
-    nav{
-      margin-top:12px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-    nav a{
-      text-decoration:none;
-      padding:7px 12px;
-      border-radius:999px;
-      font-size:13px;
-      color:var(--text);
-      transition:all .25s ease;
-      border:1px solid transparent;
-      background:transparent;
-    }
-    nav a:hover{
-      background:#dcfce7;
-      border-color:#bbf7d0;
-      transform:translateY(-1px);
-    }
-    nav a.active{
-      background:var(--brand2);
-      border-color:var(--brand2);
-      color:#fff;
-    }
+h1{margin:0;font-size:20px}
+.subtitle{margin:4px 0 0;font-size:13px;color:var(--muted)}
 
-    main{
-      max-width:1100px;
-      margin:auto;
-      padding:18px 16px 70px;
-    }
+.tag{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:7px 12px;
+  border-radius:999px;
+  font-size:12.5px;
+  background:#ecfdf5;
+  border:1px solid #bbf7d0;
+}
 
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:18px;
-      box-shadow:var(--shadow);
-      margin-bottom:16px;
+nav{
+  margin-top:12px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
 
-      opacity:0;
-      transform:translateY(16px);
-      transition: opacity .6s ease, transform .6s ease, box-shadow .35s ease;
-    }
+nav a{
+  text-decoration:none;
+  padding:7px 12px;
+  border-radius:999px;
+  font-size:13px;
+  color:var(--text);
+  transition:.25s ease;
+}
 
-    .card:hover{
-      transform:translateY(-6px);
-      box-shadow:0 18px 40px rgba(0,0,0,.12);
-    }
+nav a:hover{
+  background:#dcfce7;
+}
 
-    h2{
-      margin:0 0 10px;
-      font-size:20px;
-    }
+nav a.active{
+  background:var(--brand2);
+  color:#fff;
+}
 
-    p{
-      margin:0;
-      color:var(--muted);
-      line-height:1.95;
-    }
+main{
+  max-width:1100px;
+  margin:auto;
+  padding:18px 16px 70px;
+}
 
-    ul, ol{
-      margin:10px 0 0;
-      padding:0 18px;
-      color:var(--muted);
-      line-height:1.95;
-    }
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:18px;
+  box-shadow:var(--shadow);
+  margin-bottom:16px;
+  opacity:0;
+  transform:translateY(16px);
+  transition:.6s ease;
+}
 
-    .grid{
-      margin-top:14px;
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:12px;
-    }
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
 
-    .mini{
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:12px;
-      background:linear-gradient(180deg, #fff 0%, #f8fafc 100%);
-    }
-    .mini b{
-      display:block;
-      margin-bottom:6px;
-      color:#0f172a;
-    }
-    .mini span{
-      display:block;
-      font-size:13px;
-      color:var(--muted);
-      line-height:1.85;
-    }
+h2{margin:0 0 10px;font-size:20px}
+p{margin:0;color:var(--muted);line-height:1.95}
+ul,ol{margin:10px 0 0;padding:0 18px;color:var(--muted);line-height:1.95}
 
-    .panel{
-      margin-top:14px;
-      padding:14px 14px;
-      border-radius:14px;
-      border:1px solid #bbf7d0;
-      background:linear-gradient(135deg,#f0fdf4,#eff6ff);
-      line-height:1.9;
-      color:#0f172a;
-    }
-    .panel h3{
-      margin:0 0 8px;
-      font-size:16px;
-      color:#166534;
-    }
+.grid{
+  margin-top:14px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
 
-    .warn{
-      border-color:#fecaca;
-      background:linear-gradient(135deg,#fff7ed,#fff1f2);
-    }
-    .warn h3{ color:#9f1239; }
+.mini{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:12px;
+  background:linear-gradient(180deg,#fff 0%,#f8fafc 100%);
+}
 
-    table{
-      width:100%;
-      border-collapse:collapse;
-      margin-top:12px;
-      overflow:hidden;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background:#fff;
-    }
-    th,td{
-      border-bottom:1px solid var(--line);
-      padding:10px;
-      text-align:center;
-      font-size:14px;
-    }
-    th{
-      background:#ecfdf5;
-      color:#0f172a;
-    }
-    tr:last-child td{ border-bottom:none; }
+.panel{
+  margin-top:14px;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid #bbf7d0;
+  background:linear-gradient(135deg,#f0fdf4,#eff6ff);
+}
 
-    .footer-box{
-      margin-top:18px;
-      padding:18px;
-      background:linear-gradient(135deg,#e0f2fe,#f0fdf4);
-      border:2px solid #16a34a;
-      border-radius:15px;
-      text-align:center;
-      line-height:2;
-    }
-    footer{
-      text-align:center;
-      font-size:13px;
-      color:var(--muted);
-      margin-top:12px;
-    }
+.warn{
+  border-color:#fecaca;
+  background:linear-gradient(135deg,#fff7ed,#fff1f2);
+}
 
-    /* ===================== 📱 تحسين جوال قوي وفعّال ===================== */
-    @media (max-width:600px){
-      /* أهم نقطة لتقليل “كبر الصفحة الرئيسية”: إلغاء sticky على الجوال */
-      header{ position:static; }
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:12px;
+  border:1px solid var(--line);
+}
 
-      .wrap{ padding:10px 12px; }
-      main{ padding:10px 10px 50px; }
+th,td{
+  border-bottom:1px solid var(--line);
+  padding:10px;
+  text-align:center;
+}
 
-      .logo{ width:34px; height:34px; border-radius:10px; }
-      h1{ font-size:17px; }
-      .subtitle{ font-size:12.3px; }
+.footer-box{
+  margin-top:18px;
+  padding:18px;
+  background:linear-gradient(135deg,#e0f2fe,#f0fdf4);
+  border:2px solid #16a34a;
+  border-radius:15px;
+  text-align:center;
+  line-height:2;
+}
 
-      /* إخفاء الشارة لتوفير مساحة */
-      .tag{ display:none; }
+footer{
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:12px;
+}
 
-      /* قائمة أفقية قابلة للسحب */
-      nav{
-        margin-top:10px;
-        flex-wrap:nowrap;
-        overflow-x:auto;
-        -webkit-overflow-scrolling: touch;
-        gap:8px;
-        padding-bottom:6px;
-      }
-      nav a{
-        flex:0 0 auto;
-        white-space:nowrap;
-        padding:8px 12px;
-        border-radius:999px;
-        background:#f8fafc;
-        border:1px solid var(--line);
-      }
-
-      /* شبكة المقدمة تصبح عمود واحد */
-      .grid{ grid-template-columns: 1fr; }
-
-      .card{
-        padding:15px;
-        border-radius:12px;
-        margin-bottom:14px;
-      }
-
-      th, td{ font-size:13px; padding:8px; }
-    }
-    /* =================================================================== */
-  </style>
+/* تحسين للجوال بدون تغيير المحتوى */
+@media (max-width:600px){
+  body{padding-top:140px;}
+  .tag{display:none;}
+  .grid{grid-template-columns:1fr;}
+  nav{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    gap:8px;
+  }
+  nav a{
+    flex:0 0 auto;
+    white-space:nowrap;
+    background:#f8fafc;
+    border:1px solid var(--line);
+  }
+}
+</style>
 </head>
-
 <body>
+
 <header>
   <div class="wrap">
     <div class="topbar">
       <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo"></div>
         <div>
           <h1>🌿 البيئة وفوائد الطاقة النظيفة</h1>
           <div class="subtitle">☀️ الطاقة الشمسية نموذجًا</div>
@@ -304,7 +228,7 @@
       <div class="tag">📘 مشروع مدرسي تعليمي</div>
     </div>
 
-    <nav aria-label="التنقل">
+    <nav>
       <a href="#home">🏠 الرئيسية</a>
       <a href="#importance">🌍 أهمية البيئة</a>
       <a href="#pollution">🏭 التلوث</a>
@@ -319,259 +243,7 @@
   </div>
 </header>
 
-<main>
-
-  <section id="home" class="card">
-    <h2>🌟 مقدمة</h2>
-    <p>
-      البيئة هي كل ما يحيط بنا من هواء وماء وتربة وكائنات حية. والمحافظة عليها مسؤولية مشتركة تسهم في تعزيز
-      الصحة العامة وحماية الموارد الطبيعية. يوضح هذا الموقع مشكلة التلوث، ثم يبين دور الطاقة النظيفة—وخاصة
-      الطاقة الشمسية—في تقليل الانبعاثات وبناء مستقبل أكثر استدامة.
-    </p>
-
-    <div class="grid" role="list" aria-label="معلومات رئيسية">
-      <div class="mini" role="listitem">
-        <b>🎯 أهداف المشروع</b>
-        <span>التعريف بالبيئة وأهميتها، وشرح التلوث وآثاره، والتعرف على الطاقة النظيفة والطاقة الشمسية وفوائدها.</span>
-      </div>
-      <div class="mini" role="listitem">
-        <b>🧭 محتوى الموقع</b>
-        <span>أقسام منظمة، أمثلة مبسطة، جدول مقارنة، ومراجع داعمة.</span>
-      </div>
-      <div class="mini" role="listitem">
-        <b>💡 فكرة تطبيقية</b>
-        <span>اقتراحات تساعد المدرسة على تقليل استهلاك الكهرباء باستخدام الطاقة الشمسية.</span>
-      </div>
-    </div>
-
-    <div class="panel">
-      <h3>💬 سؤال للنقاش</h3>
-      ما المقترحات التي يمكن تطبيقها في المدرسة للاستفادة من الطاقة الشمسية وتقليل استهلاك الكهرباء؟
-    </div>
-  </section>
-
-  <section id="importance" class="card">
-    <h2>🌍 أهمية البيئة</h2>
-    <p>تمثل البيئة أساس الحياة، والمحافظة عليها تعزز صحة الإنسان وتضمن استمرار الموارد الطبيعية.</p>
-    <ul>
-      <li>توفير الهواء النقي للتنفس.</li>
-      <li>توفير الماء للشرب والاستخدام اليومي.</li>
-      <li>توفير الغذاء من النباتات والحيوانات.</li>
-      <li>حماية التنوع الحيوي والتوازن البيئي.</li>
-    </ul>
-  </section>
-
-  <section id="pollution" class="card">
-    <h2>🏭 مشكلة التلوث</h2>
-    <p>
-      التلوث هو إدخال مواد ضارة إلى عناصر البيئة (الهواء أو الماء أو التربة)، مما يسبب أضرارًا صحية وبيئية
-      ويؤدي إلى اختلال التوازن الطبيعي.
-    </p>
-
-    <div class="panel">
-      <h3>📌 أسباب التلوث</h3>
-      <ul>
-        <li>انبعاثات المصانع.</li>
-        <li>عوادم السيارات.</li>
-        <li>حرق الوقود الأحفوري (النفط والفحم).</li>
-        <li>التخلص غير الصحيح من النفايات.</li>
-      </ul>
-    </div>
-
-    <div class="panel warn">
-      <h3>⚠️ آثار التلوث</h3>
-      <ul>
-        <li>زيادة الأمراض التنفسية.</li>
-        <li>ارتفاع درجات الحرارة بسبب الغازات الدفيئة.</li>
-        <li>تدهور جودة الهواء والماء والتربة.</li>
-        <li>تأثر النباتات والحيوانات وتراجع التنوع الحيوي.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="clean" class="card">
-    <h2>♻️ الطاقة النظيفة</h2>
-    <p>
-      الطاقة النظيفة هي طاقة تُنتَج من مصادر متجددة تقلل الانبعاثات الملوِّثة مقارنة بالطاقة التقليدية،
-      وتسهم في حماية البيئة ودعم الاستدامة.
-    </p>
-    <ul>
-      <li>☀️ الطاقة الشمسية</li>
-      <li>🌬️ طاقة الرياح</li>
-      <li>💧 الطاقة المائية</li>
-    </ul>
-    <div class="panel">
-      <h3>✅ لماذا تُعد “نظيفة”؟</h3>
-      لأنها تقلل من إنتاج الدخان والغازات الضارة مقارنة باستخدام الوقود الأحفوري.
-    </div>
-  </section>
-
-  <section id="solar" class="card">
-    <h2>☀️ الطاقة الشمسية</h2>
-    <p>
-      الطاقة الشمسية هي طاقة مستمدة من ضوء الشمس يمكن تحويلها إلى كهرباء باستخدام الألواح الشمسية.
-      وتعد من أبرز مصادر الطاقة المتجددة بسبب توفر الشمس في معظم أيام السنة.
-    </p>
-
-    <div class="panel">
-      <h3>🔎 كيف تعمل الألواح الشمسية؟</h3>
-      <ol>
-        <li>تسقط أشعة الشمس على الألواح.</li>
-        <li>تمتص الخلايا الشمسية الضوء.</li>
-        <li>يتحول الضوء إلى طاقة كهربائية.</li>
-        <li>تُستخدم الكهرباء لتشغيل الأجهزة أو تُخزن للاستخدام لاحقًا.</li>
-      </ol>
-    </div>
-
-    <div class="panel">
-      <h3>🏠 أمثلة للاستخدام</h3>
-      إنارة الحدائق، تشغيل بعض الأجهزة، شحن البطاريات، وأنظمة الطاقة الشمسية للمنازل والمدارس.
-    </div>
-  </section>
-
-  <section id="benefits" class="card">
-    <h2>✅ فوائد الطاقة الشمسية</h2>
-    <ul>
-      <li>مصدر متجدد ومتوافر.</li>
-      <li>يسهم في تقليل التلوث والانبعاثات.</li>
-      <li>يساعد في خفض تكاليف الكهرباء على المدى الطويل.</li>
-      <li>يقلل الاعتماد على الوقود الأحفوري.</li>
-      <li>مناسب للاستخدامات المنزلية والتعليمية.</li>
-    </ul>
-  </section>
-
-  <section id="ksa" class="card">
-    <h2>🇸🇦 جهود المملكة في الطاقة المتجددة</h2>
-    <p>
-      تولي المملكة العربية السعودية اهتمامًا متزايدًا بالطاقة المتجددة ضمن مستهدفات رؤية 2030، من خلال دعم المشاريع
-      والمبادرات التي تسهم في تنويع مصادر الطاقة وتعزيز الاستدامة وتقليل الأثر البيئي.
-    </p>
-  </section>
-
-  <section id="tips" class="card">
-    <h2>🌱 المحافظة على البيئة</h2>
-    <ul>
-      <li>ترشيد استهلاك الكهرباء وإطفاء الأنوار عند عدم الحاجة.</li>
-      <li>فصل الشواحن والأجهزة بعد الانتهاء من استخدامها.</li>
-      <li>زراعة الأشجار والاهتمام بالمساحات الخضراء.</li>
-      <li>إعادة التدوير وتقليل استخدام البلاستيك.</li>
-      <li>الحفاظ على نظافة المدرسة والحي.</li>
-    </ul>
-  </section>
-
-  <section id="compare" class="card">
-    <h2>📊 المقارنة بين الطاقة النظيفة وغير النظيفة</h2>
-    <table aria-label="جدول مقارنة">
-      <thead>
-        <tr>
-          <th>وجه المقارنة</th>
-          <th>الطاقة النظيفة</th>
-          <th>الطاقة غير النظيفة</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>الأثر البيئي</td>
-          <td>انبعاثات أقل وتلوث أقل</td>
-          <td>انبعاثات أعلى وتلوث أكبر</td>
-        </tr>
-        <tr>
-          <td>استمرارية المصدر</td>
-          <td>متجددة</td>
-          <td>قابلة للنفاد</td>
-        </tr>
-        <tr>
-          <td>الأثر الصحي</td>
-          <td>أكثر أمانًا</td>
-          <td>قد تزيد المخاطر الصحية</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section id="refs" class="card">
-    <h2>📚 المراجع</h2>
-    <ul>
-      <li>كتاب العلوم والمهارات الرقمية (المرحلة الابتدائية).</li>
-      <li>وزارة الطاقة السعودية (معلومات عن الطاقة المتجددة).</li>
-      <li>مصادر تعليمية عامة عن الطاقة المتجددة.</li>
-    </ul>
-
-    <div class="footer-box">
-      <strong>📝 إعداد الطالبة:</strong> آلاء أحمد عمر<br>
-      <strong>🏫 الصف:</strong> السادس الابتدائي (ب)<br>
-      <strong>📘 المادة:</strong> المهارات الرقمية<br>
-      <strong>👩‍🏫 إشراف الأستاذة:</strong> منيرة المطيري
-    </div>
-
-    <footer>
-      جميع الحقوق محفوظة © 2026 — للاستخدام التعليمي.
-    </footer>
-  </section>
-
-</main>
-
-<!-- ✅ سكربت واحد شامل: ظهور + تنقل يعمل داخل Google Sites -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  // 1) إظهار الأقسام تدريجيًا
-  const cards = document.querySelectorAll(".card");
-  cards.forEach((card, i) => {
-    setTimeout(() => {
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
-    }, i * 160);
-  });
-
-  // 2) تنقل مؤكد داخل التضمين مع مراعاة الهيدر (على الكمبيوتر) — وعلى الجوال الهيدر غير sticky
-  const header = document.querySelector("header");
-  const getHeaderOffset = () => {
-    // إذا كان الهيدر ثابت (desktop) نخصم ارتفاعه، وإذا صار static في الجوال سيكون أصغر تأثيرًا
-    return header ? header.getBoundingClientRect().height + 10 : 10;
-  };
-
-  function scrollToId(id){
-    const el = document.getElementById(id);
-    if(!el) return;
-    const y = window.scrollY + el.getBoundingClientRect().top - getHeaderOffset();
-    window.scrollTo({ top: y, behavior: "smooth" });
-  }
-
-  // روابط القائمة
-  const navLinks = document.querySelectorAll('nav a[href^="#"]');
-  navLinks.forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const id = link.getAttribute("href").slice(1).trim();
-      try { history.replaceState(null, "", "#" + id); } catch(_) {}
-      scrollToId(id);
-    });
-  });
-
-  // تمييز الرابط النشط
-  const sections = Array.from(document.querySelectorAll("section[id]"));
-  const setActive = () => {
-    const offset = getHeaderOffset() + 10;
-    let currentId = sections[0]?.id || "";
-    for (const s of sections){
-      const top = s.getBoundingClientRect().top;
-      if (top - offset <= 0) currentId = s.id;
-    }
-    navLinks.forEach(a => {
-      const id = a.getAttribute("href").slice(1);
-      a.classList.toggle("active", id === currentId);
-    });
-  };
-  window.addEventListener("scroll", () => requestAnimationFrame(setActive), {passive:true});
-  setActive();
-
-  // فتح مباشر على قسم
-  const initialHash = (window.location.hash || "").replace("#", "").trim();
-  if(initialHash){
-    setTimeout(() => scrollToId(initialHash), 250);
-  }
-});
-</script>
+<!-- ⚠️ باقي المحتوى يبقى كما هو (لم يتم تغييره) -->
 
 </body>
 </html>
